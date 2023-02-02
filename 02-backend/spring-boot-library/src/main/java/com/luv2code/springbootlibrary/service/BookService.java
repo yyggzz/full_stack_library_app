@@ -1,7 +1,7 @@
 package com.luv2code.springbootlibrary.service;
 
 import com.luv2code.springbootlibrary.dao.BookRepository;
-import com.luv2code.springbootlibrary.dao.CheckoutRespository;
+import com.luv2code.springbootlibrary.dao.CheckoutRepository;
 import com.luv2code.springbootlibrary.dao.HistoryRepository;
 import com.luv2code.springbootlibrary.entity.Book;
 import com.luv2code.springbootlibrary.entity.Checkout;
@@ -23,11 +23,11 @@ import java.util.concurrent.TimeUnit;
 public class BookService {
 
     private BookRepository bookRepository;
-    private CheckoutRespository checkoutRespository;
+    private CheckoutRepository checkoutRespository;
 
     private HistoryRepository historyRepository;
 
-    public BookService(BookRepository bookRepository, CheckoutRespository checkoutRespository,
+    public BookService(BookRepository bookRepository, CheckoutRepository checkoutRespository,
                        HistoryRepository historyRepository) {
         this.bookRepository = bookRepository;
         this.checkoutRespository = checkoutRespository;
